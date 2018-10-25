@@ -57,6 +57,7 @@ ifeq (virtualenv,$(ENV_WRAPPER))
 else
 	conda create --name $(PROJECT_NAME) python=$(PYTHON_INTERPRETER)
 	@echo ">>> New conda env created. Activate with:\nsource activate $(PROJECT_NAME)"
+endif
 
 #################################################################################
 # PROJECT RULES                                                                 #
